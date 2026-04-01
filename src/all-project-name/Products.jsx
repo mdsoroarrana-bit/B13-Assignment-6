@@ -36,7 +36,7 @@ const Products = ({selectedPlayers,setSelectedPlayers}) => {
                 })}
                 <div className="flex justify-between border mt-40 ">
                             <p>Total :</p>
-                            <p> $ {}</p>
+                            <p> ${0}</p>
                 </div>
         </div>
     );
