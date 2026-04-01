@@ -3,6 +3,7 @@ import Hero from './all-project-name/Hero'
 import Navber from './all-project-name/Navber'
 import Card from './all-project-name/CardTitle'
 import { Suspense, useState } from 'react'
+import Products from './all-project-name/Products'
 
 const fetchPlayer = async()=> {
   const res = await fetch("/data.json");

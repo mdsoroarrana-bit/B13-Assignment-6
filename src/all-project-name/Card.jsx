@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Card = ({player,setCoin,coin}) => {
+const Card = ({player,setCoin,coin,setSelectedPlayers, selectedPlayers}) => {
     const [isSelected, setIsSelected] = useState(false);
     const handle = () => {
         
@@ -13,7 +13,8 @@ const Card = ({player,setCoin,coin}) => {
         }
         alert(`${player.name} is selected`);
         setIsSelected(true);
-    }
+        setSelectedPlayers([...selectedPlayers, player])
+    };
     return (
          <div className="card  bg-base-100 shadow-sm rounded-4xl ">
                     <h2 className=" font-bold text-xl p-4"> ID : {player.id}</h2>

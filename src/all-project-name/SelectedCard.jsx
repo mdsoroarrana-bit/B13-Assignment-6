@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 
-const SelectedCard = ({players,setCoin,coin }) => {
+const SelectedCard = ({players,setCoin,coin,setSelectedPlayers,selectedPlayers }) => {
     return (
         <div>
             <header className="container mx-auto">
@@ -11,7 +11,12 @@ const SelectedCard = ({players,setCoin,coin }) => {
             {players.map(player => {
                 return <div>
            
-               <Card player={player} setCoin={setCoin} coin={coin} ></Card>
+               <Card 
+                player={player} 
+                setCoin={setCoin} 
+                coin={coin}
+                setSelectedPlayers={setSelectedPlayers}
+                selectedPlayers={selectedPlayers} ></Card>
              
             </div> ;
              })}
