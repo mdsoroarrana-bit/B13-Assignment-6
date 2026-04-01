@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/KzWB21mz/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build a modern personal portfolio website بسهولة.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Responsive design", "Custom domains", "SEO optimized"],
+    "icon": "https://i.ibb.co.com/pvt23jzZ/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Job Tracker",
+    "description": "Track job applications and manage interview schedules.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Application tracking", "Reminders", "Dashboard analytics"],
+    "icon": "https://i.ibb.co.com/b5WyGs0Y/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Cover Letter Generator",
+    "description": "Generate personalized cover letters in seconds.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["AI writing assistant", "Multiple formats", "Download options"],
+    "icon": "https://i.ibb.co.com/ynWVhtrk/social-media.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Toolkit",
+    "description": "Practice and prepare for job interviews effectively.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Mock interviews", "Common Q&A", "Feedback system"],
+    "icon": "https://i.ibb.co.com/zhFB1jNr/writing-2327400-1.png"
+  },
+  {
+    "id": 6,
+    "name": "LinkedIn Optimization Pack",
+    "description": "Optimize your LinkedIn profile for better visibility.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Profile tips", "Keyword optimization", "Headline generator"],
+    "icon": "https://i.ibb.co.com/YBvX0NtX/rocket.png"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Starter Kit",
+    "description": "Everything you need to start freelancing online.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Proposal templates", "Client contracts", "Pricing guide"],
+    "icon": "https://i.ibb.co.com/0RdPXW2F/package.png"
+  },
+  {
+    "id": 8,
+    "name": "Skill Development Courses",
+    "description": "Access premium courses to boost your career skills.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited access", "Certificates", "Expert instructors"],
+    "icon": "https://i.ibb.co.com/t939yjP/user.png"
+  }
+]

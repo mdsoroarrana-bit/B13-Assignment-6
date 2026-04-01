@@ -3,7 +3,7 @@ import React from 'react';
 const Navber = () => {
     return (
         <div>
-            <div className="container mx-auto  navbar bg-base-100 shadow-sm justify-between">
+            <div className="container mx-auto  navbar bg-base-100 shadow-sm justify-between px-20">
             <div className="flex ">
                 <a className="text-2xl font-bold text-[#4F39F6]">DigTools</a>
             </div>

@@ -32,6 +32,23 @@ const Hero = () => {
                 </div>
             </div>
             </div>
+            <div className="bg-blue-600 h-40 container mx-auto mb-5">
+              <div className="flex text-center items-center justify-center pt-14 gap-30">
+                <div className="text-white ">
+                    <p className="font-bold text-3xl">50K+</p>
+                    <p>Active Users</p>
+                </div>
+                <div className="text-white ">
+                    <p className="font-bold text-3xl">200+</p>
+                    <p>Premium Tools</p>
+                </div>
+                <div className="text-white ">
+                    <p className="font-bold text-3xl">4.9</p>
+                    <p>Rating</p>
+                </div>
+                
+             </div>
+            </div>
         </div>
     );
 };
