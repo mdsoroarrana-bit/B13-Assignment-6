@@ -1,24 +1,15 @@
 import React from 'react';
 
-const Navber = () => {
+const Navber = ({coin}) => {
     return (
         <div>
             <div className="container mx-auto  navbar bg-base-100 shadow-sm justify-between px-20">
             <div className="flex ">
                 <a className="text-2xl font-bold text-[#4F39F6]">DigTools</a>
             </div>
-            <div >
-                <div className="flex items-center text-center gap-4">
-                    <p>Products</p>
-                    <p>Features</p>
-                    <p>Pricing</p>
-                    <p>Testimonials</p>
-                    <p>FAQ</p>
-                </div>
-                
-                
-            </div>
+            <div className="text-center items-center font-bold text-2xl">$ {coin}</div>
             <div className="flex space-x-4">
+                
                 <div className="dropdown dropdown-end flex items-center text-center gap-2">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                     <div className="indicator">

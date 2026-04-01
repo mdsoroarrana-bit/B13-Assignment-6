@@ -1,26 +1,21 @@
-import React, { use } from 'react';
+import React, { useState } from 'react';
 
-const Card = ({playersPromise}) => {
-    // console.log (playersPromise);
-    const players = use(playersPromise);
-    // console.log(players);
+const Card = ({player,setCoin,coin}) => {
+    const [isSelected, setIsSelected] = useState(false);
+    const handle = () => {
+        
+        let newCoin = coin - player.price;
+        if(newCoin >=0){
+            setCoin(coin - player.price);
+        }else {
+            alert("Not enuogh coin to purchase this player");
+            return;
+        }
+        alert(`${player.name} is selected`);
+        setIsSelected(true);
+    }
     return (
-        <header className="container mx-auto">
-            <div className="text-center items-center w-160   mx-auto space-x-10 space-y-6 mt-20">
-                <h2 className="font-bold text-4xl">Premium Digital Tools</h2>
-                <p>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
-                   <div className="space-x-6">
-                     <button className="btn btn-primary rounded-4xl">Products</button>
-                    <button className="btn rounded-4xl">Cart ()</button>
-                   </div>
-            </div> 
-             
-        <div className="p-10 grid sm:grid-cols-1  md:grid-cols-3 gap-4 items-center">
-            {players.map(player => {
-                // console.log(player, 'player')
-                return <div>
-           
-                <div className="card  bg-base-100 shadow-sm rounded-4xl ">
+         <div className="card  bg-base-100 shadow-sm rounded-4xl ">
                     <h2 className=" font-bold text-xl p-4"> ID : {player.id}</h2>
                     <div className="p-2 ">
                         <h6 className="w-30 rounded-4xl bg-amber-100  text-center">{player.tag}</h6>
@@ -41,18 +36,14 @@ const Card = ({playersPromise}) => {
                     
                     </ul>
                     <div className="mt-6">
-                    <button className="btn btn-primary btn-block">Subscribe</button>
+                    <button onClick={handle} 
+                        disabled={isSelected ? true : false}
+                        className="btn btn-primary">
+                        {isSelected === true ? "Successfull" : "Buy Now"}
+                         </button>
                     </div>
                 </div>
                 </div>
-             
-            </div> ;
-             })}
-        </div>
-
-            
-
-        </header>
     );
 };
 
